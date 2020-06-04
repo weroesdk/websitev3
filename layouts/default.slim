@@ -1,0 +1,12 @@
+doctype html
+html lang="en" 
+  head
+    meta charset="utf-8"
+    title ="wero.es #{@item[:title]}"
+    link href="/stylesheet.css" rel="stylesheet"
+    meta content=("Nanoc <%= Nanoc::VERSION %>") name="generator"
+    link href="https://cdn.jsdelivr.net/npm/pygments-rouge-css@0.1.0/murphy.css" rel="stylesheet"
+    link href="https://cdn.jsdelivr.net/npm/prismjs@1.19.0/themes/prism-tomorrow.min.css" rel="stylesheet"
+    link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Noto+Serif+JP:wght@300;600&display=swap" rel="stylesheet"
+  body
+    #main.center== yield

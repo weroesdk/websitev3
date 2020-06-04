@@ -1,0 +1,331 @@
+Crashlog created at 2020-06-04 20:23:52 +0200
+
+===== MESSAGE:
+
+SyntaxError: layout /default.slim:6: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+    link href="/stylesheet.css" rel="style...
+         ^~~~
+layout /default.slim:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+...link href="/stylesheet.css" rel="stylesheet" /
+...                            ^~~
+layout /default.slim:8: unmatched close parenthesis: /! you don't need to keep this, but it's cool for stats!
+    meta content=("Nanoc <%= Nanoc::VERSION ).to_s); _erbout.<< "\") name=\"generator\" /
+layout /default.slim:8: syntax error, unexpected backslash, expecting ')'
+...t.<< "\") name=\"generator\" /\n    link href=\"https://cdn....
+...                              ^
+layout /default.slim:8: syntax error, unexpected backslash
+..."generator\" /\n    link href=\"https://cdn.jsdelivr.net/npm...
+...                              ^
+layout /default.slim:14: syntax error, unexpected end-of-input, expecting ')'
+
+===== ITEM BEING COMPILED:
+
+Current item: /cv.md (:default representation)
+
+===== STACK TRACE:
+
+  0. /Users/soren/.rubies/ruby-2.6.5/lib/ruby/2.6.0/erb.rb:901:in `eval'
+  1. /Users/soren/.rubies/ruby-2.6.5/lib/ruby/2.6.0/erb.rb:901:in `result'
+  2. /Users/soren/.gem/ruby/2.6.5/gems/nanoc-4.11.16/lib/nanoc/filters/erb.rb:32:in `run'
+  3. /Users/soren/.gem/ruby/2.6.5/gems/nanoc-core-4.11.16/lib/nanoc/core/filter.rb:188:in `setup_and_run'
+  4. /Users/soren/.gem/ruby/2.6.5/gems/nanoc-core-4.11.16/lib/nanoc/core/executor.rb:67:in `layout'
+  5. /Users/soren/.gem/ruby/2.6.5/gems/nanoc-core-4.11.16/lib/nanoc/core/compilation_phases/recalculate.rb:34:in `block in run'
+  6. /Users/soren/.gem/ruby/2.6.5/gems/nanoc-core-4.11.16/lib/nanoc/core/action_sequence.rb:49:in `block in each'
+  7. /Users/soren/.gem/ruby/2.6.5/gems/nanoc-core-4.11.16/lib/nanoc/core/action_sequence.rb:49:in `each'
+  8. /Users/soren/.gem/ruby/2.6.5/gems/nanoc-core-4.11.16/lib/nanoc/core/action_sequence.rb:49:in `each'
+  9. /Users/soren/.gem/ruby/2.6.5/gems/nanoc-core-4.11.16/lib/nanoc/core/compilation_phases/recalculate.rb:29:in `run'
+  10. /Users/soren/.gem/ruby/2.6.5/gems/nanoc-core-4.11.16/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
+  11. /Users/soren/.gem/ruby/2.6.5/gems/nanoc-core-4.11.16/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
+  12. /Users/soren/.gem/ruby/2.6.5/gems/nanoc-core-4.11.16/lib/nanoc/core/compilation_phases/cache.rb:25:in `run'
+  13. /Users/soren/.gem/ruby/2.6.5/gems/nanoc-core-4.11.16/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
+  14. /Users/soren/.gem/ruby/2.6.5/gems/nanoc-core-4.11.16/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
+  15. /Users/soren/.gem/ruby/2.6.5/gems/nanoc-core-4.11.16/lib/nanoc/core/compilation_phases/resume.rb:14:in `block in run'
+
+===== VERSION INFORMATION:
+
+Nanoc 4.11.16 © 2007–2019 Denis Defreyne.
+Running ruby 2.6.5 (2019-10-01) on x86_64-darwin19 with RubyGems 3.0.3.
+
+===== SYSTEM INFORMATION:
+
+Darwin ease 19.5.0 Darwin Kernel Version 19.5.0: Tue May 26 20:41:44 PDT 2020; root:xnu-6153.121.2~2/RELEASE_X86_64 x86_64
+
+===== INSTALLED GEMS:
+
+  addressable 2.7.0
+  adsf 1.4.3
+  adsf-live 1.4.3
+  bundler 2.1.4
+  coderay 1.1.3
+  colored 1.2
+  concurrent-ruby 1.1.6
+  cri 2.15.10
+  ddmemoize 1.0.0
+  ddmetrics 1.0.1
+  ddplugin 1.0.2
+  diff-lcs 1.3
+  em-websocket 0.5.1
+  equatable 0.6.1
+  eventmachine 1.2.7
+  ffi 1.13.0
+  formatador 0.2.5
+  guard 2.16.2
+  guard-compat 1.2.1
+  guard-nanoc 2.1.9
+  hamster 3.0.0
+  http_parser.rb 0.6.0
+  json_schema 0.20.8
+  kramdown 2.2.1
+  listen 3.2.1
+  lumberjack 1.2.5
+  method_source 1.0.0
+  mini_portile2 2.4.0
+  nanoc 4.11.16
+  nanoc-checking 1.0.0
+  nanoc-cli 4.11.16
+  nanoc-core 4.11.16
+  nanoc-deploying 1.0.0
+  nenv 0.3.0
+  nokogiri 1.10.9
+  notiffany 0.1.3
+  parallel 1.19.1
+  pastel 0.7.4
+  pry 0.13.1
+  public_suffix 4.0.5
+  rack 2.2.2
+  rack-livereload 0.3.17
+  rb-fsevent 0.10.4
+  rb-inotify 0.10.1
+  ref 2.0.0
+  rexml 3.1.9
+  shellany 0.0.1
+  slim 4.0.1
+  slow_enumerator_tools 1.1.0
+  temple 0.8.2
+  thor 1.0.1
+  tilt 2.0.10
+  tomlrb 1.3.0
+  tty-color 0.5.1
+  tty-command 0.9.0
+  tty-platform 0.3.0
+  tty-which 0.4.2
+  zeitwerk 2.3.0
+
+===== GEMFILE.LOCK:
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
+    adsf (1.4.3)
+      rack (>= 1.0.0, < 3.0.0)
+    adsf-live (1.4.3)
+      adsf (~> 1.3)
+      em-websocket (~> 0.5)
+      eventmachine (~> 1.2)
+      listen (~> 3.0)
+      rack-livereload (~> 0.3)
+    coderay (1.1.3)
+    colored (1.2)
+    concurrent-ruby (1.1.6)
+    cri (2.15.10)
+    ddmemoize (1.0.0)
+      ddmetrics (~> 1.0)
+      ref (~> 2.0)
+    ddmetrics (1.0.1)
+    ddplugin (1.0.2)
+    diff-lcs (1.3)
+    em-websocket (0.5.1)
+      eventmachine (>= 0.12.9)
+      http_parser.rb (~> 0.6.0)
+    equatable (0.6.1)
+    eventmachine (1.2.7)
+    ffi (1.13.0)
+    formatador (0.2.5)
+    guard (2.16.2)
+      formatador (>= 0.2.4)
+      listen (>= 2.7, < 4.0)
+      lumberjack (>= 1.0.12, < 2.0)
+      nenv (~> 0.1)
+      notiffany (~> 0.0)
+      pry (>= 0.9.12)
+      shellany (~> 0.0)
+      thor (>= 0.18.1)
+    guard-compat (1.2.1)
+    guard-nanoc (2.1.9)
+      guard (~> 2.8)
+      guard-compat (~> 1.0)
+      nanoc-cli (~> 4.11, >= 4.11.14)
+      nanoc-core (~> 4.11, >= 4.11.14)
+    hamster (3.0.0)
+      concurrent-ruby (~> 1.0)
+    http_parser.rb (0.6.0)
+    json_schema (0.20.8)
+    kramdown (2.2.1)
+      rexml
+    listen (3.2.1)
+      rb-fsevent (~> 0.10, >= 0.10.3)
+      rb-inotify (~> 0.9, >= 0.9.10)
+    lumberjack (1.2.5)
+    method_source (1.0.0)
+    mini_portile2 (2.4.0)
+    nanoc (4.11.16)
+      addressable (~> 2.5)
+      colored (~> 1.2)
+      nanoc-checking (~> 1.0)
+      nanoc-cli (= 4.11.16)
+      nanoc-core (= 4.11.16)
+      nanoc-deploying (~> 1.0)
+      parallel (~> 1.12)
+      tty-command (~> 0.8)
+      tty-which (~> 0.4)
+    nanoc-checking (1.0.0)
+      nanoc-cli (~> 4.11, >= 4.11.15)
+      nanoc-core (~> 4.11, >= 4.11.15)
+    nanoc-cli (4.11.16)
+      cri (~> 2.15)
+      diff-lcs (~> 1.3)
+      nanoc-core (= 4.11.16)
+      zeitwerk (~> 2.1)
+    nanoc-core (4.11.16)
+      ddmemoize (~> 1.0)
+      ddmetrics (~> 1.0)
+      ddplugin (~> 1.0)
+      hamster (~> 3.0)
+      json_schema (~> 0.19)
+      slow_enumerator_tools (~> 1.0)
+      tomlrb (~> 1.2)
+      tty-platform (~> 0.2)
+      zeitwerk (~> 2.1)
+    nanoc-deploying (1.0.0)
+      nanoc-checking (~> 1.0)
+      nanoc-cli (~> 4.11, >= 4.11.15)
+      nanoc-core (~> 4.11, >= 4.11.15)
+    nenv (0.3.0)
+    nokogiri (1.10.9)
+      mini_portile2 (~> 2.4.0)
+    notiffany (0.1.3)
+      nenv (~> 0.1)
+      shellany (~> 0.0)
+    parallel (1.19.1)
+    pastel (0.7.4)
+      equatable (~> 0.6)
+      tty-color (~> 0.5)
+    pry (0.13.1)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
+    public_suffix (4.0.5)
+    rack (2.2.2)
+    rack-livereload (0.3.17)
+      rack
+    rb-fsevent (0.10.4)
+    rb-inotify (0.10.1)
+      ffi (~> 1.0)
+    ref (2.0.0)
+    rexml (3.1.9)
+    shellany (0.0.1)
+    slim (4.0.1)
+      temple (>= 0.7.6, < 0.9)
+      tilt (>= 2.0.6, < 2.1)
+    slow_enumerator_tools (1.1.0)
+    temple (0.8.2)
+    thor (1.0.1)
+    tilt (2.0.10)
+    tomlrb (1.3.0)
+    tty-color (0.5.1)
+    tty-command (0.9.0)
+      pastel (~> 0.7.0)
+    tty-platform (0.3.0)
+    tty-which (0.4.2)
+    zeitwerk (2.3.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  adsf!
+  adsf-live!
+  guard!
+  guard-nanoc!
+  kramdown!
+  nanoc (~> 4.3)!
+  nokogiri!
+  slim!
+
+BUNDLED WITH
+   2.1.4
+
+===== LOAD PATHS:
+
+  0. /Users/soren/.gem/ruby/2.6.5/gems/ref-2.0.0/lib
+  1. /Users/soren/.gem/ruby/2.6.5/gems/bundler-2.1.4/lib
+  2. /Users/soren/.gem/ruby/2.6.5/gems/slim-4.0.1/lib
+  3. /Users/soren/.gem/ruby/2.6.5/gems/tilt-2.0.10/lib
+  4. /Users/soren/.gem/ruby/2.6.5/gems/temple-0.8.2/lib
+  5. /Users/soren/.gem/ruby/2.6.5/gems/nokogiri-1.10.9/lib
+  6. /Users/soren/.gem/ruby/2.6.5/extensions/x86_64-darwin-19/2.6.0/nokogiri-1.10.9
+  7. /Users/soren/.gem/ruby/2.6.5/gems/nanoc-4.11.16/lib
+  8. /Users/soren/.gem/ruby/2.6.5/gems/tty-which-0.4.2/lib
+  9. /Users/soren/.gem/ruby/2.6.5/gems/tty-command-0.9.0/lib
+  10. /Users/soren/.gem/ruby/2.6.5/gems/pastel-0.7.4/lib
+  11. /Users/soren/.gem/ruby/2.6.5/gems/tty-color-0.5.1/lib
+  12. /Users/soren/.gem/ruby/2.6.5/gems/parallel-1.19.1/lib
+  13. /Users/soren/.gem/ruby/2.6.5/gems/nanoc-deploying-1.0.0/lib
+  14. /Users/soren/.gem/ruby/2.6.5/gems/nanoc-checking-1.0.0/lib
+  15. /Users/soren/.gem/ruby/2.6.5/gems/mini_portile2-2.4.0/lib
+  16. /Users/soren/.gem/ruby/2.6.5/gems/kramdown-2.2.1/lib
+  17. /Users/soren/.rubies/ruby-2.6.5/lib/ruby/gems/2.6.0/gems/rexml-3.1.9/lib
+  18. /Users/soren/.gem/ruby/2.6.5/gems/guard-nanoc-2.1.9/lib
+  19. /Users/soren/.gem/ruby/2.6.5/gems/nanoc-cli-4.11.16/lib
+  20. /Users/soren/.gem/ruby/2.6.5/gems/nanoc-core-4.11.16/lib
+  21. /Users/soren/.gem/ruby/2.6.5/gems/zeitwerk-2.3.0/lib
+  22. /Users/soren/.gem/ruby/2.6.5/gems/tty-platform-0.3.0/lib
+  23. /Users/soren/.gem/ruby/2.6.5/gems/tomlrb-1.3.0/lib
+  24. /Users/soren/.gem/ruby/2.6.5/gems/slow_enumerator_tools-1.1.0/lib
+  25. /Users/soren/.gem/ruby/2.6.5/gems/json_schema-0.20.8/lib
+  26. /Users/soren/.gem/ruby/2.6.5/gems/hamster-3.0.0/lib
+  27. /Users/soren/.gem/ruby/2.6.5/gems/guard-compat-1.2.1/lib
+  28. /Users/soren/.gem/ruby/2.6.5/gems/guard-2.16.2/lib
+  29. /Users/soren/.gem/ruby/2.6.5/gems/thor-1.0.1/lib
+  30. /Users/soren/.gem/ruby/2.6.5/gems/pry-0.13.1/lib
+  31. /Users/soren/.gem/ruby/2.6.5/gems/method_source-1.0.0/lib
+  32. /Users/soren/.gem/ruby/2.6.5/gems/notiffany-0.1.3/lib
+  33. /Users/soren/.gem/ruby/2.6.5/gems/shellany-0.0.1/lib
+  34. /Users/soren/.gem/ruby/2.6.5/gems/nenv-0.3.0/lib
+  35. /Users/soren/.gem/ruby/2.6.5/gems/lumberjack-1.2.5/lib
+  36. /Users/soren/.gem/ruby/2.6.5/gems/formatador-0.2.5/lib
+  37. /Users/soren/.gem/ruby/2.6.5/gems/equatable-0.6.1/lib
+  38. /Users/soren/.gem/ruby/2.6.5/gems/diff-lcs-1.3/lib
+  39. /Users/soren/.gem/ruby/2.6.5/gems/ddplugin-1.0.2/lib
+  40. /Users/soren/.gem/ruby/2.6.5/gems/ddmemoize-1.0.0/lib
+  41. /Users/soren/.gem/ruby/2.6.5/gems/ref-2.0.0/lib
+  42. /Users/soren/.gem/ruby/2.6.5/gems/ddmetrics-1.0.1/lib
+  43. /Users/soren/.gem/ruby/2.6.5/gems/cri-2.15.10/lib
+  44. /Users/soren/.gem/ruby/2.6.5/gems/concurrent-ruby-1.1.6/lib/concurrent-ruby
+  45. /Users/soren/.gem/ruby/2.6.5/gems/colored-1.2/lib
+  46. /Users/soren/.gem/ruby/2.6.5/gems/coderay-1.1.3/lib
+  47. /Users/soren/.gem/ruby/2.6.5/gems/adsf-live-1.4.3/lib
+  48. /Users/soren/.gem/ruby/2.6.5/gems/rack-livereload-0.3.17/lib
+  49. /Users/soren/.gem/ruby/2.6.5/gems/listen-3.2.1/lib
+  50. /Users/soren/.gem/ruby/2.6.5/gems/rb-inotify-0.10.1/lib
+  51. /Users/soren/.gem/ruby/2.6.5/gems/ffi-1.13.0/lib
+  52. /Users/soren/.gem/ruby/2.6.5/extensions/x86_64-darwin-19/2.6.0/ffi-1.13.0
+  53. /Users/soren/.gem/ruby/2.6.5/gems/rb-fsevent-0.10.4/lib
+  54. /Users/soren/.gem/ruby/2.6.5/gems/em-websocket-0.5.1/lib
+  55. /Users/soren/.gem/ruby/2.6.5/gems/http_parser.rb-0.6.0/lib
+  56. /Users/soren/.gem/ruby/2.6.5/extensions/x86_64-darwin-19/2.6.0/http_parser.rb-0.6.0
+  57. /Users/soren/.gem/ruby/2.6.5/gems/eventmachine-1.2.7/lib
+  58. /Users/soren/.gem/ruby/2.6.5/extensions/x86_64-darwin-19/2.6.0/eventmachine-1.2.7
+  59. /Users/soren/.gem/ruby/2.6.5/gems/adsf-1.4.3/lib
+  60. /Users/soren/.gem/ruby/2.6.5/gems/rack-2.2.2/lib
+  61. /Users/soren/.gem/ruby/2.6.5/gems/addressable-2.7.0/lib
+  62. /Users/soren/.gem/ruby/2.6.5/gems/public_suffix-4.0.5/lib
+  63. /Users/soren/.rubies/ruby-2.6.5/lib/ruby/site_ruby/2.6.0
+  64. /Users/soren/.rubies/ruby-2.6.5/lib/ruby/site_ruby/2.6.0/x86_64-darwin19
+  65. /Users/soren/.rubies/ruby-2.6.5/lib/ruby/site_ruby
+  66. /Users/soren/.rubies/ruby-2.6.5/lib/ruby/vendor_ruby/2.6.0
+  67. /Users/soren/.rubies/ruby-2.6.5/lib/ruby/vendor_ruby/2.6.0/x86_64-darwin19
+  68. /Users/soren/.rubies/ruby-2.6.5/lib/ruby/vendor_ruby
+  69. /Users/soren/.rubies/ruby-2.6.5/lib/ruby/2.6.0
+  70. /Users/soren/.rubies/ruby-2.6.5/lib/ruby/2.6.0/x86_64-darwin19
