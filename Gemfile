@@ -9,4 +9,5 @@ source "https://rubygems.org" do
   gem "kramdown"
   gem "nokogiri"
   gem "slim"
+  gem "stylus"
 end

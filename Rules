@@ -26,6 +26,11 @@ compile "/**/*.md" do
   end
 end
 
+compile "/**/*.styl" do
+  filter :stylus
+  write item.identifier.without_ext + ".css"
+end
+
 compile "/**/*.slim" do
   filter :slim
   layout "/default.*"

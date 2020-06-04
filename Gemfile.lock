@@ -26,6 +26,7 @@ GEM
       http_parser.rb (~> 0.6.0)
     equatable (0.6.1)
     eventmachine (1.2.7)
+    execjs (2.7.0)
     ffi (1.13.0)
     formatador (0.2.5)
     guard (2.16.2)
@@ -114,6 +115,10 @@ GEM
       temple (>= 0.7.6, < 0.9)
       tilt (>= 2.0.6, < 2.1)
     slow_enumerator_tools (1.1.0)
+    stylus (1.0.2)
+      execjs
+      stylus-source
+    stylus-source (0.54.5)
     temple (0.8.2)
     thor (1.0.1)
     tilt (2.0.10)
@@ -137,6 +142,7 @@ DEPENDENCIES
   nanoc (~> 4.3)!
   nokogiri!
   slim!
+  stylus!
 
 BUNDLED WITH
    2.1.4
