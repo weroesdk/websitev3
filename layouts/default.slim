@@ -1,9 +1,20 @@
 doctype html
-html lang="en" 
+html lang="en"
   head
     meta charset="utf-8"
     title ="weroes > #{@item[:title]}"
     link href="/stylesheet.css" rel="stylesheet"
     meta content=("Nanoc <%= Nanoc::VERSION %>") name="generator"
   body
+    script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"
     #main.center== yield
+    footer
+      img.gravatar src="https://www.gravatar.com/avatar/f3faba69a1c4eb6f7aab1e3d04082714?s=200"
+      ul
+        li
+          a href="mailto:soren@wero.es" target="_blank" soren@wero.es <- let's have coffee!
+        li
+          a href="callto:+4529903200" target="_blank" +45 29 90 32 00
+    javascript:
+      var scene = document.getElementById('main');
+      var parallaxInstance = new Parallax(scene);

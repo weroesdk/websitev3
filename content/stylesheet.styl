@@ -23,13 +23,18 @@ td
 
 #main.center
   margin auto
-  width 940px
+  width 640px
 
 .centered
   text-align center
+  width 100%
+
+for depth in 1 2 3 4 5 6
+  .d{depth}
+    filter drop-shadow(0px*depth 3px*depth 4px #aaa)
 
 #main
-  border 0.5px solid blue
+  border none
   border-radius 10px
   padding 24px
 
@@ -37,14 +42,20 @@ img.logo
   width 600px
 
 footer
+  position relative
   height 130px
   border-radius 10px
   padding 12px
   background-color blue
+  width 640px
+  margin auto
+  margin-top 350px
   ul
     list-style-type none
-    padding 0
-    margin 0
+    padding 20px
+    margin 10px
+    li
+      margin 10px
 
 img.gravatar
   float right
